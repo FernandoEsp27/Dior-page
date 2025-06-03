@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dior</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar">
+    <div class="container">
+        <img src="img/LogoDior.jpg" alt="Logo de Dior" class="logo" />
+        <nav class="menu">
+        <ul class="menu-list">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        </nav>
+    </div>
+    </header>
+
+    <main>
+    <section class="carrusel-container">
+        <div class="carrusel-slide active" style="background-image: url('img/1.jpg');"></div>
+        <div class="carrusel-slide" style="background-image: url('img/2.jpg');"></div>
+        <div class="carrusel-slide" style="background-image: url('img/3.jpg');"></div>
+
+        <button class="prev" aria-label="Imagen anterior">&#10094;</button>
+        <button class="next" aria-label="Imagen siguiente">&#10095;</button>
+    </section>
+
+    <section id="servicios" class="servicios-section">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicios-grid">
+        <div class="servicio">
+            <div class="icono-box">
+            <img src="img/compra.png" alt="Icono compra">
+            <div class="descripcion">
+                <p>Explora nuestro catálogo y encuentra lo que necesitas.</p>
+            </div>
+            </div>
+            <h3>Realizar una compra</h3>
+        </div>
+
+        <div class="servicio">
+            <div class="icono-box">
+            <img src="img/entrega.png" alt="Icono entrega">
+            <div class="descripcion">
+                <p>Personaliza la fecha y lugar de tu próxima compra.</p>
+            </div>
+            </div>
+            <h3>Programar Entregas</h3>
+        </div>
+
+        <div class="servicio">
+            <div class="icono-box">
+            <img src="img/servicio.png" alt="Icono servicio personalizado">
+            <div class="descripcion">
+                <p>Contáctate directamente con un agente Dior disponible.</p>
+            </div>
+            </div>
+            <h3>Servicio Personalizado</h3>
+        </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="galeria-section">
+        <h2>Galería</h2>
+        <div class="galeria-grid">
+        <img src="img/galeria1.jpg" alt="Galería 1" class="galeria-img">
+        <img src="img/galeria2.jpg" alt="Galería 2" class="galeria-img">
+        <img src="img/galeria3.jpg" alt="Galería 3" class="galeria-img">
+        <img src="img/galeria4.jpg" alt="Galería 4" class="galeria-img">
+        <img src="img/galeria5.jpg" alt="Galería 5" class="galeria-img">
+        <img src="img/galeria6.jpg" alt="Galería 6" class="galeria-img">
+        <img src="img/galeria7.jpg" alt="Galería 7" class="galeria-img extra hidden">
+        <img src="img/galeria8.jpg" alt="Galería 8" class="galeria-img extra hidden">
+        <img src="img/galeria9.jpg" alt="Galería 9" class="galeria-img extra hidden">
+        </div>
+        <button id="toggleGaleriaBtn" aria-expanded="false">Mostrar más</button>
+
+        <div id="galeriaModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        </div>
+    </section>
+    </main>
+
+    <footer class="footer">
+    <p>&copy; 2025 Dior. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
