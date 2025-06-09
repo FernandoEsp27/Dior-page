@@ -12,6 +12,8 @@
   --gray: #e5e5e5;
 }
 
+
+
 /* Tipografía global */
 body {
   font-family: 'Open Sans', sans-serif;
@@ -321,3 +323,72 @@ button:hover {
 .modal-content:active {
     transform: scale(1.02);
 }
+
+/* --- Primera parte del footer --- */
+.pre-footer {
+  background-color: #f8f8f8;
+  padding: 40px 20px;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+.footer-col {
+  flex: 1 1 300px;
+}
+.footer-col h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+.footer-col p {
+  margin: 8px 0;
+  color: #555;
+}
+
+/* --- Segunda franja: redes sociales --- */
+.social-footer {
+  background-color: #111;
+  text-align: center;
+  padding: 20px;
+}
+.social-icons {
+  margin-bottom: 10px;
+}
+.social-icons a {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #e6b800; /* dorado Dior */
+}
+.social-footer p {
+  color: #ccc;
+  margin-top: 10px;
+}
+.social-footer a {
+  color: #e6b800;
+  text-decoration: none;
+}
+.social-footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-columna .mapa-container {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-columna iframe {
+  max-width: 90%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+

@@ -6,7 +6,9 @@
     <title>Dior</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2e0e1c46d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -25,7 +27,8 @@
     </header>
 
     <main>
-    <section class="carrusel-container">
+
+    <section id="inicio" class="carrusel-container">
         <div class="carrusel-slide active" style="background-image: url('img/1.jpg');"></div>
         <div class="carrusel-slide" style="background-image: url('img/2.jpg');"></div>
         <div class="carrusel-slide" style="background-image: url('img/3.jpg');"></div>
@@ -91,9 +94,42 @@
     </section>
     </main>
 
-    <footer class="footer">
-    <p>&copy; 2025 Dior. Todos los derechos reservados.</p>
-    </footer>
+    <section id="contacto" class="pre-footer">
+    <div class="footer-container">
+    <div class="footer-col info-empresa">
+        <h3>Información de la Empresa</h3>
+        <p><strong>Dirección:</strong> Av. de la Moda #123, París, Francia</p>
+        <p><strong>Horarios:</strong> Lunes a Sábado, 9:00 AM - 6:00 PM</p>
+        <p><strong>Teléfono:</strong> +33 1 23 45 67 89</p>
+        <p><strong>Correo:</strong> contacto@dior.com</p>
+        <p><strong>Atención al Cliente:</strong> 24/7 vía WhatsApp</p>
+    </div>
+
+    <div class="footer-col mapa">
+        <h3>Ubicación</h3>
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999781542953!2d2.2922923156747543!3d48.85884407928753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdf5d7df0e3%3A0x9c3e95c143df7e7!2sTorre%20Eiffel!5e0!3m2!1ses!2sfr!4v1717620000000!5m2!1ses!2sfr" 
+        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    </div>
+</section>
+<section class="social-footer">
+    <div class="social-icons">
+    <a href="https://www.facebook.com/Dior" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/dior/" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.tiktok.com/@dior" target="_blank" aria-label="TikTok">
+        <i class="fab fa-tiktok"></i>
+    </a>
+    </div>
+    <p>&copy; 2025 <a href="https://github.com/FernandoEsp27" target="_blank">Fernando Espinoza, desarrollador</a>. Todos los derechos reservados.</p>
+</section>
+
+
 
     <script src="js/main.js"></script>
 </body>
