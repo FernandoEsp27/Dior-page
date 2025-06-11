@@ -392,3 +392,56 @@ button:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Ocultar el menú-toggle en pantallas grandes */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Media query para móviles */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1000;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu-list {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .menu-list li {
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+  }
+}
+
+.menu-toggle {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
